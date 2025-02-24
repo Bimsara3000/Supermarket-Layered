@@ -17,11 +17,11 @@ public class CustomerDAOImpl implements CustomerDAO {
 
         while (rst.next()) {
             Customer customer = new Customer(
-                    rst.getString(1),  // Customer ID
-                    rst.getString(2),  // Name
-                    rst.getString(3),  // NIC
-                    rst.getString(4),  // Email
-                    rst.getString(5)   // Phone
+                    rst.getString(1),
+                    rst.getString(2),
+                    rst.getString(3),
+                    rst.getString(4),
+                    rst.getString(5)
             );
             customers.add(customer);
         }
@@ -90,11 +90,11 @@ public class CustomerDAOImpl implements CustomerDAO {
 
         if (rst.next()) {
             return new Customer(
-                    rst.getString(1),  // Customer ID
-                    rst.getString(2),  // Name
-                    rst.getString(3),  // NIC
-                    rst.getString(4),  // Email
-                    rst.getString(5)   // Phone
+                    rst.getString(1),
+                    rst.getString(2),
+                    rst.getString(3),
+                    rst.getString(4),
+                    rst.getString(5)
             );
         }
         return null;
